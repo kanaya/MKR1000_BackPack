@@ -12401,9 +12401,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="025-025X050" package3d_urn="urn:adsk.eagle:package:26151/1" value="0.1u"/>
 <part name="ANALOG" library="con-ml" library_urn="urn:adsk.eagle:library:164" deviceset="ML14L" device="" package3d_urn="urn:adsk.eagle:package:8677/1"/>
-<part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="-JST-2-PTH-NO_SILK" package3d_urn="urn:adsk.eagle:package:38056/1"/>
-<part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="-JST-2-PTH-NO_SILK" package3d_urn="urn:adsk.eagle:package:38056/1"/>
-<part name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_05" device="SMD" package3d_urn="urn:adsk.eagle:package:38026/1" value="3.3V"/>
+<part name="LED1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="-JST-2-PTH-NO_SILK" package3d_urn="urn:adsk.eagle:package:38056/1"/>
+<part name="LED2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="-JST-2-PTH-NO_SILK" package3d_urn="urn:adsk.eagle:package:38056/1"/>
+<part name="I2C" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_05" device="SMD" package3d_urn="urn:adsk.eagle:package:38026/1" value="3.3V"/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:25955/1" value="680"/>
@@ -12433,9 +12433,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="SUPPLY2" gate="GND" x="233.68" y="71.12"/>
 <instance part="C1" gate="G$1" x="320.04" y="121.92"/>
 <instance part="ANALOG" gate="1" x="279.4" y="149.86" rot="MR180"/>
-<instance part="J1" gate="G$1" x="340.36" y="111.76" rot="R180"/>
-<instance part="J2" gate="G$1" x="340.36" y="96.52" rot="R180"/>
-<instance part="J3" gate="G$1" x="375.92" y="81.28" rot="R180"/>
+<instance part="LED1" gate="G$1" x="342.9" y="111.76" rot="R180"/>
+<instance part="LED2" gate="G$1" x="342.9" y="96.52" rot="R180"/>
+<instance part="I2C" gate="G$1" x="375.92" y="81.28" rot="R180"/>
 <instance part="SUPPLY3" gate="GND" x="363.22" y="71.12"/>
 <instance part="SUPPLY4" gate="GND" x="365.76" y="93.98"/>
 <instance part="R1" gate="G$1" x="325.12" y="119.38" rot="R90"/>
@@ -12498,7 +12498,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="233.68" y1="86.36" x2="233.68" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="5"/>
+<pinref part="I2C" gate="G$1" pin="5"/>
 <wire x1="368.3" y1="76.2" x2="363.22" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 <wire x1="363.22" y1="76.2" x2="363.22" y2="73.66" width="0.1524" layer="91"/>
@@ -12546,7 +12546,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="287.02" y1="142.24" x2="289.56" y2="142.24" width="0.1524" layer="91"/>
 <junction x="289.56" y="142.24"/>
 <wire x1="320.04" y1="127" x2="325.12" y2="127" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="1"/>
+<pinref part="I2C" gate="G$1" pin="1"/>
 <wire x1="325.12" y1="127" x2="327.66" y2="127" width="0.1524" layer="91"/>
 <wire x1="327.66" y1="127" x2="358.14" y2="127" width="0.1524" layer="91"/>
 <wire x1="358.14" y1="127" x2="360.68" y2="127" width="0.1524" layer="91"/>
@@ -12680,20 +12680,21 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="256.54" y1="142.24" x2="271.78" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="LED1K" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="13"/>
 <wire x1="274.32" y1="101.6" x2="271.78" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="101.6" x2="271.78" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="91.44" x2="330.2" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="LED1" gate="G$1" pin="2"/>
 <wire x1="330.2" y1="91.44" x2="330.2" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="330.2" y1="109.22" x2="332.74" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="109.22" x2="335.28" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="LED2K" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="2"/>
+<pinref part="LED2" gate="G$1" pin="2"/>
+<wire x1="335.28" y1="93.98" x2="332.74" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="332.74" y1="93.98" x2="332.74" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="332.74" y1="88.9" x2="330.2" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="88.9" x2="269.24" y2="88.9" width="0.1524" layer="91"/>
@@ -12708,7 +12709,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="304.8" y1="101.6" x2="309.88" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="101.6" x2="309.88" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="309.88" y1="86.36" x2="309.88" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="2"/>
+<pinref part="I2C" gate="G$1" pin="2"/>
 <wire x1="309.88" y1="83.82" x2="355.6" y2="83.82" width="0.1524" layer="91"/>
 <label x="363.22" y="83.82" size="1.778" layer="95"/>
 <pinref part="MMA8452Q" gate="G$1" pin="4"/>
@@ -12724,7 +12725,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="J5" gate="G$1" pin="7"/>
 <wire x1="304.8" y1="114.3" x2="312.42" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="114.3" x2="312.42" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="3"/>
+<pinref part="I2C" gate="G$1" pin="3"/>
 <wire x1="312.42" y1="81.28" x2="360.68" y2="81.28" width="0.1524" layer="91"/>
 <label x="363.22" y="81.28" size="1.778" layer="95"/>
 <wire x1="360.68" y1="81.28" x2="368.3" y2="81.28" width="0.1524" layer="91"/>
@@ -12743,7 +12744,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="J5" gate="G$1" pin="8"/>
 <wire x1="304.8" y1="116.84" x2="314.96" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="116.84" x2="314.96" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="4"/>
+<pinref part="I2C" gate="G$1" pin="4"/>
 <wire x1="314.96" y1="78.74" x2="358.14" y2="78.74" width="0.1524" layer="91"/>
 <label x="363.22" y="78.74" size="1.778" layer="95"/>
 <wire x1="358.14" y1="78.74" x2="368.3" y2="78.74" width="0.1524" layer="91"/>
@@ -12757,20 +12758,20 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="363.22" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="LED1A" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="325.12" y1="114.3" x2="325.12" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="325.12" y1="111.76" x2="332.74" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="1"/>
+<wire x1="325.12" y1="111.76" x2="335.28" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="LED2A" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="327.66" y1="99.06" x2="327.66" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="327.66" y1="96.52" x2="332.74" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="LED2" gate="G$1" pin="1"/>
+<wire x1="327.66" y1="96.52" x2="335.28" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D6" class="0">
