@@ -21,16 +21,16 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
@@ -42,11 +42,11 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -161,10 +161,16 @@
 <wire x1="4.2" y1="59.25" x2="4.2" y2="61.45" width="0.254" layer="42"/>
 <wire x1="20.8" y1="59.25" x2="20.8" y2="61.55" width="0.254" layer="42"/>
 <wire x1="22.7" y1="57.25" x2="24.95" y2="57.25" width="0.254" layer="42"/>
-<text x="12.5" y="58" size="1.27" layer="25" align="bottom-center">MKR1000BP 2.0.0
-Pineapple</text>
+<text x="12.5" y="58" size="1.27" layer="25" align="bottom-center">PineappleCake 1.0.0
+for MKR1000</text>
 <hole x="17.58" y="27" drill="3.2"/>
 <hole x="7.42" y="27" drill="3.2"/>
+<circle x="2.25" y="2.25" radius="1.97230625" width="0.254" layer="42"/>
+<circle x="22.75" y="2.25" radius="1.97230625" width="0.254" layer="42"/>
+<wire x1="2.3" y1="4.3" x2="0.05" y2="4.3" width="0.254" layer="42"/>
+<wire x1="4.2" y1="0.25" x2="4.2" y2="2.45" width="0.254" layer="42"/>
+<wire x1="20.8" y1="0.25" x2="20.8" y2="2.55" width="0.254" layer="42"/>
+<wire x1="22.7" y1="4.25" x2="24.95" y2="4.25" width="0.254" layer="42"/>
 </plain>
 <libraries>
 <library name="resistor-net" urn="urn:adsk.eagle:library:343">
