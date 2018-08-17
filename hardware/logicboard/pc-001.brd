@@ -157,7 +157,7 @@
 <hole x="22.75" y="59.25" drill="2"/>
 <hole x="22.75" y="2.25" drill="2"/>
 <hole x="2.25" y="2.25" drill="2"/>
-<text x="12.5" y="56" size="1.016" layer="25" align="center">PineappleCake 1.1.0</text>
+<text x="12.5" y="56" size="1.016" layer="25" align="center">PineappleCake 1.0.1</text>
 </plain>
 <libraries>
 <library name="resistor-net" urn="urn:adsk.eagle:library:343">
