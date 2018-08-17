@@ -163,7 +163,7 @@
 <wire x1="4.2" y1="59.25" x2="4.2" y2="61.45" width="0.254" layer="42"/>
 <wire x1="20.8" y1="59.25" x2="20.8" y2="61.45" width="0.254" layer="42"/>
 <wire x1="22.7" y1="57.25" x2="24.95" y2="57.25" width="0.254" layer="42"/>
-<text x="12.5" y="56" size="1.016" layer="25" align="center">PineappleCake Rev. 2.0.0</text>
+<text x="12.5" y="56" size="1.016" layer="25" align="center">PineappleCake Rev. 1.2.0</text>
 <hole x="17.58" y="27" drill="3.2"/>
 <hole x="7.42" y="27" drill="3.2"/>
 <circle x="2.25" y="2.25" radius="1.97230625" width="0.254" layer="42"/>
