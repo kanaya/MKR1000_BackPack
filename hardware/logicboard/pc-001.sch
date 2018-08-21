@@ -19716,7 +19716,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheets>
 <sheet>
 <plain>
-<text x="215.9" y="20.32" size="1.778" layer="94">PineappleCake 2.0.0 for MKR1000</text>
+<text x="215.9" y="20.32" size="1.778" layer="94">PineappleCake 1.2.0 for MKR1000</text>
 </plain>
 <instances>
 <instance part="J5" gate="G$1" x="109.22" y="93.98" smashed="yes">
