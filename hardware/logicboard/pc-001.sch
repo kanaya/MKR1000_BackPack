@@ -19698,7 +19698,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="IPADDRESS" library="switch-dil" library_urn="urn:adsk.eagle:library:375" deviceset="A1353HEX" device="" package3d_urn="urn:adsk.eagle:package:27207/1"/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="025-025X050" package3d_urn="urn:adsk.eagle:package:26151/1" value="0.1u"/>
-<part name="ANALOG" library="con-ml" library_urn="urn:adsk.eagle:library:164" deviceset="ML14L" device="" package3d_urn="urn:adsk.eagle:package:8677/1"/>
+<part name="ANALOG-PULLDOWN" library="con-ml" library_urn="urn:adsk.eagle:library:164" deviceset="ML14L" device="" package3d_urn="urn:adsk.eagle:package:8677/1"/>
 <part name="L1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="-JST-2-PTH-NO_SILK" package3d_urn="urn:adsk.eagle:package:38056/1"/>
 <part name="L2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="-JST-2-PTH-NO_SILK" package3d_urn="urn:adsk.eagle:package:38056/1"/>
 <part name="I2C" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_05" device="SMD" package3d_urn="urn:adsk.eagle:package:38026/1" value="3.3V"/>
@@ -19709,7 +19709,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:25955/1" value="6.8k"/>
 <part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:25955/1" value="6.8k"/>
 <part name="MMA8452Q" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_06" device="NO_SILK_FEMALE_PTH" package3d_urn="urn:adsk.eagle:package:38130/1"/>
-<part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
+<part name="FRAME" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S-COPPER" value="OSHW-LOGOS-COPPER"/>
 <part name="U$1" library="pineapple" deviceset="PINEAPPLE450" device=""/>
 </parts>
@@ -19733,7 +19733,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="IPADDRESS" gate="1" x="58.42" y="63.5" rot="R270"/>
 <instance part="SUPPLY2" gate="GND" x="48.26" y="48.26"/>
 <instance part="C1" gate="G$1" x="134.62" y="99.06"/>
-<instance part="ANALOG" gate="1" x="93.98" y="127" rot="MR180"/>
+<instance part="ANALOG-PULLDOWN" gate="1" x="93.98" y="127" rot="MR180"/>
 <instance part="L1" gate="G$1" x="157.48" y="88.9" rot="R180"/>
 <instance part="L2" gate="G$1" x="157.48" y="73.66" rot="R180"/>
 <instance part="I2C" gate="G$1" x="190.5" y="58.42" rot="R180"/>
@@ -19744,7 +19744,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="R3" gate="G$1" x="172.72" y="96.52" rot="R90"/>
 <instance part="R4" gate="G$1" x="175.26" y="96.52" rot="R90"/>
 <instance part="MMA8452Q" gate="G$1" x="187.96" y="86.36" rot="R180"/>
-<instance part="FRAME2" gate="G$1" x="0" y="0"/>
+<instance part="FRAME" gate="G$1" x="0" y="0"/>
 <instance part="LOGO1" gate="G$1" x="241.3" y="165.1"/>
 <instance part="U$1" gate="G$1" x="187.96" y="7.62"/>
 </instances>
@@ -19759,7 +19759,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="55.88" y1="106.68" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="134.62" x2="55.88" y2="106.68" width="0.1524" layer="91"/>
 <junction x="55.88" y="106.68"/>
-<pinref part="ANALOG" gate="1" pin="2"/>
+<pinref part="ANALOG-PULLDOWN" gate="1" pin="2"/>
 <wire x1="55.88" y1="134.62" x2="86.36" y2="134.62" width="0.1524" layer="91"/>
 <label x="86.36" y="106.68" size="1.778" layer="95"/>
 </segment>
@@ -19773,7 +19773,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="58.42" y1="101.6" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="132.08" x2="58.42" y2="104.14" width="0.1524" layer="91"/>
 <junction x="58.42" y="104.14"/>
-<pinref part="ANALOG" gate="1" pin="4"/>
+<pinref part="ANALOG-PULLDOWN" gate="1" pin="4"/>
 <wire x1="58.42" y1="132.08" x2="86.36" y2="132.08" width="0.1524" layer="91"/>
 <label x="86.36" y="104.14" size="1.778" layer="95"/>
 </segment>
@@ -19832,24 +19832,24 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="104.14" y1="121.92" x2="104.14" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="101.6" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
 <junction x="134.62" y="104.14"/>
-<pinref part="ANALOG" gate="1" pin="1"/>
+<pinref part="ANALOG-PULLDOWN" gate="1" pin="1"/>
 <wire x1="104.14" y1="134.62" x2="101.6" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="ANALOG" gate="1" pin="3"/>
+<pinref part="ANALOG-PULLDOWN" gate="1" pin="3"/>
 <wire x1="101.6" y1="132.08" x2="104.14" y2="132.08" width="0.1524" layer="91"/>
 <junction x="104.14" y="132.08"/>
-<pinref part="ANALOG" gate="1" pin="5"/>
+<pinref part="ANALOG-PULLDOWN" gate="1" pin="5"/>
 <wire x1="101.6" y1="129.54" x2="104.14" y2="129.54" width="0.1524" layer="91"/>
 <junction x="104.14" y="129.54"/>
-<pinref part="ANALOG" gate="1" pin="7"/>
+<pinref part="ANALOG-PULLDOWN" gate="1" pin="7"/>
 <wire x1="101.6" y1="127" x2="104.14" y2="127" width="0.1524" layer="91"/>
 <junction x="104.14" y="127"/>
-<pinref part="ANALOG" gate="1" pin="9"/>
+<pinref part="ANALOG-PULLDOWN" gate="1" pin="9"/>
 <wire x1="101.6" y1="124.46" x2="104.14" y2="124.46" width="0.1524" layer="91"/>
 <junction x="104.14" y="124.46"/>
-<pinref part="ANALOG" gate="1" pin="11"/>
+<pinref part="ANALOG-PULLDOWN" gate="1" pin="11"/>
 <wire x1="101.6" y1="121.92" x2="104.14" y2="121.92" width="0.1524" layer="91"/>
 <junction x="104.14" y="121.92"/>
-<pinref part="ANALOG" gate="1" pin="13"/>
+<pinref part="ANALOG-PULLDOWN" gate="1" pin="13"/>
 <wire x1="101.6" y1="119.38" x2="104.14" y2="119.38" width="0.1524" layer="91"/>
 <junction x="104.14" y="119.38"/>
 <wire x1="134.62" y1="104.14" x2="139.7" y2="104.14" width="0.1524" layer="91"/>
@@ -19930,7 +19930,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="60.96" y1="96.52" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="129.54" x2="60.96" y2="101.6" width="0.1524" layer="91"/>
 <junction x="60.96" y="101.6"/>
-<pinref part="ANALOG" gate="1" pin="6"/>
+<pinref part="ANALOG-PULLDOWN" gate="1" pin="6"/>
 <wire x1="60.96" y1="129.54" x2="86.36" y2="129.54" width="0.1524" layer="91"/>
 <label x="86.36" y="101.6" size="1.778" layer="95"/>
 </segment>
@@ -19944,7 +19944,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="63.5" y1="91.44" x2="53.34" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="127" x2="63.5" y2="99.06" width="0.1524" layer="91"/>
 <junction x="63.5" y="99.06"/>
-<pinref part="ANALOG" gate="1" pin="8"/>
+<pinref part="ANALOG-PULLDOWN" gate="1" pin="8"/>
 <wire x1="63.5" y1="127" x2="86.36" y2="127" width="0.1524" layer="91"/>
 <label x="86.36" y="99.06" size="1.778" layer="95"/>
 </segment>
@@ -19960,7 +19960,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="43.18" y1="106.68" x2="38.1" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="124.46" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
 <junction x="66.04" y="96.52"/>
-<pinref part="ANALOG" gate="1" pin="10"/>
+<pinref part="ANALOG-PULLDOWN" gate="1" pin="10"/>
 <wire x1="66.04" y1="124.46" x2="86.36" y2="124.46" width="0.1524" layer="91"/>
 <label x="86.36" y="96.52" size="1.778" layer="95"/>
 </segment>
@@ -19976,7 +19976,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="45.72" y1="101.6" x2="38.1" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="121.92" x2="68.58" y2="93.98" width="0.1524" layer="91"/>
 <junction x="68.58" y="93.98"/>
-<pinref part="ANALOG" gate="1" pin="12"/>
+<pinref part="ANALOG-PULLDOWN" gate="1" pin="12"/>
 <wire x1="68.58" y1="121.92" x2="86.36" y2="121.92" width="0.1524" layer="91"/>
 <label x="86.36" y="93.98" size="1.778" layer="95"/>
 </segment>
@@ -19992,7 +19992,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="48.26" y1="96.52" x2="38.1" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="119.38" x2="71.12" y2="91.44" width="0.1524" layer="91"/>
 <junction x="71.12" y="91.44"/>
-<pinref part="ANALOG" gate="1" pin="14"/>
+<pinref part="ANALOG-PULLDOWN" gate="1" pin="14"/>
 <wire x1="71.12" y1="119.38" x2="86.36" y2="119.38" width="0.1524" layer="91"/>
 <label x="86.36" y="91.44" size="1.778" layer="95"/>
 </segment>
@@ -20113,11 +20113,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </sheet>
 </sheets>
 <errors>
-<approved hash="113,1,243.84,86.3829,IPADDRESS,,,,,"/>
-<approved hash="113,1,279.4,148.3,ANALOG,,,,,"/>
-<approved hash="113,1,335.957,109.152,J1,,,,,"/>
-<approved hash="113,1,335.957,93.9123,J2,,,,,"/>
-<approved hash="113,1,371.517,106.612,MMA8452Q,,,,,"/>
+<approved hash="113,1,58.42,63.5229,IPADDRESS,,,,,"/>
+<approved hash="113,1,99.3359,125.44,ANALOG-PULLDOWN,,,,,"/>
+<approved hash="113,1,153.077,86.2923,L1,,,,,"/>
+<approved hash="113,1,153.077,71.0523,L2,,,,,"/>
+<approved hash="113,1,186.097,83.7523,MMA8452Q,,,,,"/>
+<approved hash="113,1,130.071,89.431,FRAME2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
