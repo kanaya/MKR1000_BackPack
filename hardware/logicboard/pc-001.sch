@@ -19685,8 +19685,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.254" drill="0.254">
-<clearance class="0" value="0.254"/>
+<class number="0" name="default" width="0.1524" drill="0.1524">
+<clearance class="0" value="0.1524"/>
+</class>
+<class number="1" name="gnd" width="0.3048" drill="0.1524">
+<clearance class="1" value="0.1524"/>
+</class>
+<class number="2" name="power" width="0.6096" drill="0.1524">
+<clearance class="2" value="0.1524"/>
 </class>
 </classes>
 <parts>
@@ -19778,7 +19784,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="86.36" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="J5" gate="G$1" pin="11"/>
 <wire x1="119.38" y1="101.6" x2="121.92" y2="101.6" width="0.1524" layer="91"/>
@@ -19817,7 +19823,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="180.34" y1="78.74" x2="180.34" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="VCC" class="2">
 <segment>
 <pinref part="J5" gate="G$1" pin="12"/>
 <wire x1="119.38" y1="104.14" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
