@@ -19864,8 +19864,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="142.24" y1="104.14" x2="172.72" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="104.14" x2="175.26" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="104.14" x2="177.8" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="104.14" x2="177.8" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="91.44" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="104.14" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="63.5" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
 <label x="177.8" y="63.5" size="1.778" layer="95"/>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -19880,10 +19879,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="101.6" x2="175.26" y2="104.14" width="0.1524" layer="91"/>
 <junction x="175.26" y="104.14"/>
-<pinref part="MMA8452Q" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="91.44" x2="177.8" y2="91.44" width="0.1524" layer="91"/>
-<junction x="177.8" y="91.44"/>
-<label x="177.8" y="91.44" size="1.778" layer="95"/>
 <label x="119.38" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -20115,6 +20110,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="119.38" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="+5V" class="2">
+<segment>
+<pinref part="J5" gate="G$1" pin="14"/>
+<wire x1="119.38" y1="109.22" x2="180.34" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="109.22" x2="180.34" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="MMA8452Q" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
+<label x="119.38" y="109.22" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -20124,7 +20129,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <approved hash="113,1,153.077,86.2923,L1,,,,,"/>
 <approved hash="113,1,153.077,71.0523,L2,,,,,"/>
 <approved hash="113,1,186.097,83.7523,MMA8452Q,,,,,"/>
-<approved hash="113,1,130.071,89.431,FRAME2,,,,,"/>
+<approved hash="113,1,130.071,89.431,FRAME,,,,,"/>
 </errors>
 </schematic>
 </drawing>
