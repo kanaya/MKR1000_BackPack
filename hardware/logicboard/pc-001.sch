@@ -19707,7 +19707,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="ANALOG-PULLDOWN" library="con-ml" library_urn="urn:adsk.eagle:library:164" deviceset="ML14L" device="" package3d_urn="urn:adsk.eagle:package:8677/1"/>
 <part name="L1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="-JST-2-PTH-NO_SILK" package3d_urn="urn:adsk.eagle:package:38056/1"/>
 <part name="L2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="-JST-2-PTH-NO_SILK" package3d_urn="urn:adsk.eagle:package:38056/1"/>
-<part name="I2C" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_05" device="SMD" package3d_urn="urn:adsk.eagle:package:38026/1" value="3.3V"/>
+<part name="I2C" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_05" device="SMD" package3d_urn="urn:adsk.eagle:package:38026/1"/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:25955/1" value="680"/>
@@ -19859,14 +19859,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="101.6" y1="119.38" x2="104.14" y2="119.38" width="0.1524" layer="91"/>
 <junction x="104.14" y="119.38"/>
 <wire x1="134.62" y1="104.14" x2="139.7" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="I2C" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="104.14" x2="142.24" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="104.14" x2="172.72" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="104.14" x2="175.26" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="104.14" x2="177.8" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="104.14" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="63.5" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
-<label x="177.8" y="63.5" size="1.778" layer="95"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="104.14" x2="139.7" y2="101.6" width="0.1524" layer="91"/>
 <junction x="139.7" y="104.14"/>
@@ -19878,7 +19873,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="172.72" y="104.14"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="101.6" x2="175.26" y2="104.14" width="0.1524" layer="91"/>
-<junction x="175.26" y="104.14"/>
 <label x="119.38" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -20113,11 +20107,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="+5V" class="2">
 <segment>
 <pinref part="J5" gate="G$1" pin="14"/>
-<wire x1="119.38" y1="109.22" x2="180.34" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="109.22" x2="177.8" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="109.22" x2="180.34" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="109.22" x2="180.34" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="MMA8452Q" gate="G$1" pin="1"/>
 <wire x1="180.34" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
 <label x="119.38" y="109.22" size="1.778" layer="95"/>
+<pinref part="I2C" gate="G$1" pin="1"/>
+<wire x1="177.8" y1="63.5" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
+<label x="177.8" y="63.5" size="1.778" layer="95"/>
+<wire x1="177.8" y1="63.5" x2="177.8" y2="109.22" width="0.1524" layer="91"/>
+<junction x="177.8" y="109.22"/>
 </segment>
 </net>
 </nets>
@@ -20128,6 +20128,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <approved hash="113,1,99.3359,125.44,ANALOG-PULLDOWN,,,,,"/>
 <approved hash="113,1,153.077,86.2923,L1,,,,,"/>
 <approved hash="113,1,153.077,71.0523,L2,,,,,"/>
+<approved hash="113,1,186.097,57.0823,I2C,,,,,"/>
 <approved hash="113,1,186.097,83.7523,MMA8452Q,,,,,"/>
 <approved hash="113,1,130.071,89.431,FRAME,,,,,"/>
 </errors>
