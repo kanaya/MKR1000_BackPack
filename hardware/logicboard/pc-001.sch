@@ -19874,6 +19874,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="101.6" x2="175.26" y2="104.14" width="0.1524" layer="91"/>
 <label x="119.38" y="104.14" size="1.778" layer="95"/>
+<pinref part="MMA8452Q" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="104.14" x2="180.34" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="104.14" x2="180.34" y2="91.44" width="0.1524" layer="91"/>
+<junction x="175.26" y="104.14"/>
 </segment>
 </net>
 <net name="D0" class="0">
@@ -20108,16 +20113,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="J5" gate="G$1" pin="14"/>
 <wire x1="119.38" y1="109.22" x2="177.8" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="109.22" x2="180.34" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="109.22" x2="180.34" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="MMA8452Q" gate="G$1" pin="1"/>
-<wire x1="180.34" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
 <label x="119.38" y="109.22" size="1.778" layer="95"/>
 <pinref part="I2C" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="63.5" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
 <label x="177.8" y="63.5" size="1.778" layer="95"/>
 <wire x1="177.8" y1="63.5" x2="177.8" y2="109.22" width="0.1524" layer="91"/>
-<junction x="177.8" y="109.22"/>
 </segment>
 </net>
 </nets>
