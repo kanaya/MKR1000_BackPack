@@ -20062,9 +20062,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="J5" gate="G$1" pin="8"/>
-<wire x1="119.38" y1="93.98" x2="129.54" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="93.98" x2="129.54" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="I2C" gate="G$1" pin="4"/>
 <wire x1="129.54" y1="55.88" x2="172.72" y2="55.88" width="0.1524" layer="91"/>
 <label x="177.8" y="55.88" size="1.778" layer="95"/>
@@ -20077,7 +20074,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="182.88" y1="88.9" x2="172.72" y2="88.9" width="0.1524" layer="91"/>
 <junction x="172.72" y="88.9"/>
 <label x="177.8" y="88.9" size="1.778" layer="95"/>
-<label x="119.38" y="93.98" size="1.778" layer="95"/>
+<wire x1="129.54" y1="55.88" x2="129.54" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="J5" gate="G$1" pin="6"/>
+<wire x1="129.54" y1="88.9" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
+<label x="119.38" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED1A" class="0">
